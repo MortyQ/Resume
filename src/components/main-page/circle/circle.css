@@ -1,0 +1,33 @@
+.thre-circle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.thre-circle div {
+    border-radius: 50%;
+    width: 18%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thre-circle div a {
+    font-size: 50px;
+    color: white;
+}
+
+.frst-div {
+    background-color: #fc5c65;
+}
+
+.second-div {
+    background-color: #45aaf2;
+}
+
+.thre-div {
+    background-color: #fed330;
+}
