@@ -7,6 +7,7 @@ import Resume from '../resume-page'
 import Project from '../project-page'
 import Contacts from '../contacts-page'
 import Skils from '../skils-page'
+import Spinner from '../spinner'
 import { Route, BrowserRouter } from 'react-router-dom'
 
 
@@ -14,9 +15,14 @@ import { Route, BrowserRouter } from 'react-router-dom'
 
 export default class App extends Component {
 
-
+    state = {
+        loading: null,
+    }
 
     render() {
+        const { loading } = this.state
+
+        const spinner = loading ? < Spinner / > : null;
 
 
 
@@ -31,6 +37,7 @@ export default class App extends Component {
             div className = 'wrapper-info' >
             <
             Photo / >
+
             <
             Route path = '/main'
             component = { Main }
